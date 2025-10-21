@@ -1,0 +1,26 @@
+:root{--bg:#0b1c3f;--bg2:#142b58;--accent:#1f6feb;--text:#e8eefc;--muted:#b7c4e1;--card:#fff;--ink:#0c1222;}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;font-family:Inter,system-ui; color:var(--text);
+ background:radial-gradient(circle at 50% -10%,#173064 0%,#0b1c3f 70%); text-align:center;}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:12px 20px;border-bottom:1px solid #1b2c58;background:rgba(11,28,63,0.8);backdrop-filter:blur(6px);}
+.brand{display:flex;align-items:center;font-weight:800;color:var(--text);gap:8px}
+.logo{width:28px;height:28px}
+select{background:#0b1c3f;border:1px solid #25427f;color:var(--text);padding:6px 10px;border-radius:10px}
+.hero{padding:70px 16px 30px}
+.accented{font-size:clamp(26px,4vw,42px);font-weight:800;border-bottom:4px solid var(--accent);
+ display:inline-block;padding-bottom:6px;margin-bottom:20px;text-shadow:0 0 10px rgba(31,111,235,.2)}
+.searchbar{display:grid;grid-template-columns:48px 1fr 48px 140px;gap:8px;max-width:900px;margin:0 auto;
+ padding:10px;background:rgba(255,255,255,0.06);border:1px solid #2a447e;border-radius:18px}
+.searchbar input{height:48px;border:none;outline:none;background:transparent;color:var(--text);font-size:17px}
+.searchbar button{border:none;background:#0c1f47;color:#fff;border-radius:12px;cursor:pointer;height:48px}
+.cta{background:var(--accent);font-weight:700}
+.helper{display:flex;justify-content:space-between;max-width:900px;margin:10px auto;color:var(--muted);font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:12px;max-width:1040px;margin:0 auto;padding:20px}
+.card{background:var(--card);color:var(--ink);border-radius:16px;padding:12px;min-height:100px}
+footer{border-top:1px solid #1b2c58;padding:20px 0;color:var(--muted)}
+.geo{opacity:.85}
+/* RTL support for Arabic */
+html[dir="rtl"] body{text-align:center}
+html[dir="rtl"] .searchbar{grid-template-columns:140px 48px 1fr 48px}
+@media(max-width:640px){.searchbar{grid-template-columns:42px 1fr 42px 110px}}

@@ -1,0 +1,44 @@
+{
+  "TR": [
+    {
+      "title": "Kemer Otelleri",
+      "price": "$49/gece"
+    },
+    {
+      "title": "Spor Ayakkabı",
+      "price": "$39"
+    },
+    {
+      "title": "Akıllı Saat",
+      "price": "$29"
+    }
+  ],
+  "US": [
+    {
+      "title": "NYC Hotels",
+      "price": "$89/night"
+    },
+    {
+      "title": "Headphones",
+      "price": "$59"
+    },
+    {
+      "title": "Running Shoes",
+      "price": "$44"
+    }
+  ],
+  "GLOBAL": [
+    {
+      "title": "Hotel Deals",
+      "price": "$49/night"
+    },
+    {
+      "title": "Flight Tickets",
+      "price": "$99"
+    },
+    {
+      "title": "Smartphone",
+      "price": "$199"
+    }
+  ]
+}
