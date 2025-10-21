@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Findalleasy</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+<link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <img src="assets/img/logo.svg" class="logo" alt="Findalleasy">
+    <span>Findalleasy</span>
+  </div>
+  <select id="langSelect" aria-label="Language">
+    <option value="tr">Türkçe</option>
+    <option value="en">English</option>
+    <option value="de">Deutsch</option>
+    <option value="fr">Français</option>
+    <option value="es">Español</option>
+    <option value="ru">Русский</option>
+    <option value="ar">العربية</option>
+  </select>
+</header>
+
+<main>
+  <section class="hero">
+    <h1 id="headline" class="accented">Sen Yaz, Gerisini Biz Hallederiz</h1>
+    <div class="searchbar" role="search">
+      <button id="voiceBtn" title="Voice Search">🎤</button>
+      <input id="searchInput" type="text" placeholder="Otel, Bilet, Yemek, Alışveriş..." autocomplete="off">
+      <button id="imageBtn" title="Image Search">📷</button>
+      <button id="searchBtn" class="cta"><span data-i18n="search_button">Ara</span></button>
+    </div>
+    <div class="helper">
+      <span id="placeholderRotator">Otel • Bilet • Yemek • Alışveriş • Moda • Giyim • Aksesuar • Kitap • Kırtasiye • Gayrimenkul</span>
+      <span class="geo" id="geoHint">Konum algılanıyor...</span>
+    </div>
+  </section>
+
+  <section class="trending">
+    <div id="trendGrid" class="grid"></div>
+  </section>
+</main>
+
+<footer>
+  <small>©2025 Findalleasy — Akıllı, Global, Uygun. Tek Tıklaman Yeter.</small>
+</footer>
+
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
