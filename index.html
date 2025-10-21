@@ -11,7 +11,7 @@
 <body>
   <header class="topbar">
     <div class="brand">
-      <img src="assets/img/logo.svg" alt="Findalleasy" class="logo">
+      <svg class="logo" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#34c9db"/><path d="M7 12h10M12 7v10" stroke="#0d1b2a" stroke-width="2" stroke-linecap="round"/></svg>
       <span class="brand-text">findalleasy</span>
     </div>
 
@@ -30,28 +30,32 @@
   </header>
 
   <main class="container">
+
     <!-- Slogan -->
     <h1 class="tagline">
-      <span data-i18n="taglinePrefix">Yazman Yeterli,</span>
-      <span class="underline" data-i18n="taglineStrong">Biz Hallediyoruz</span>
+      <span data-i18n="taglinePrefix">Sen Yaz,</span>
+      <span class="underline" data-i18n="taglineStrong">Gerisini Biz Hallediyoruz</span>
     </h1>
 
     <!-- Arama -->
     <div class="search-wrap">
       <input id="searchInput" class="search-input" type="text"
              placeholder="Otel, Bilet, Turlar, Yemek, Moda, Aksesuar, Gayrimenkul, Hediyelik Eşyalar" />
+
       <div class="search-right">
         <button id="voiceBtn" class="icon-btn" aria-label="Sesli Arama" title="Sesli Arama">
           <!-- mic -->
           <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 14a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v5a3 3 0 0 0 3 3zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 14 0h-2zM11 19h2v3h-2z"/></svg>
         </button>
-        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
-  <path d="M4 5h4l2-2h4l2 2h4a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V7a2 2 0 012-2zm8 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6z"/>
-</svg>
 
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M9 3l2 2h2l2-2h4v4h2v14H3V7h2V3zM5 9v10h14V9H5z"/></svg>
+        <!-- Net kamera ikonu (tek) -->
+        <label for="imageInput" class="icon-btn" title="Görsel Arama" aria-label="Görsel Arama">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+            <path d="M4 5h4l2-2h4l2 2h4a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V7a2 2 0 012-2zm8 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6z"/>
+          </svg>
         </label>
-       
+        <input id="imageInput" type="file" accept="image/*" hidden />
+
         <button id="searchBtn" class="primary-btn" data-i18n="search">Ara</button>
       </div>
     </div>
@@ -65,7 +69,6 @@
       <div id="grid" class="grid grid-4">
         <!-- 4 kart JS ile doldurulacak -->
       </div>
-      <p class="refresh-hint" data-i18n="refreshNote">Liste günlük yenilenir.</p>
     </section>
   </main>
 

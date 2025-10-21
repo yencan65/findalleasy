@@ -1,8 +1,3 @@
 {
-  "search_button": "Rechercher",
-  "headline": "Écris‑le, on s’occupe du reste",
-  "geo_detected": "Position détectée",
-  "geo_denied": "Autorisation de localisation refusée",
-  "geo_unavailable": "Géolocalisation non prise en charge",
-  "search_for": "Recherche : "
+  "search": "Rechercher"
 }

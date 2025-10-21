@@ -1,8 +1,3 @@
 {
-  "search_button": "Buscar",
-  "headline": "Escríbelo, nosotros nos encargamos del resto",
-  "geo_detected": "Ubicación detectada",
-  "geo_denied": "Permiso de ubicación denegado",
-  "geo_unavailable": "La geolocalización no es compatible",
-  "search_for": "Buscando: "
+  "search": "Buscar"
 }

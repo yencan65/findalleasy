@@ -1,3 +1,4 @@
+/* ============ Theme ============ */
 :root{
   --bg:#0d1b2a;
   --panel:#14243a;
@@ -25,41 +26,42 @@ body{
 }
 
 /* Layout */
-.container{max-width:1100px;margin:0 auto;padding:0 18px 28px}
+.container{max-width:1200px;margin:0 auto;padding:0 18px 28px}
 
 /* Slogan */
-.tagline{margin:10px 0 8px;font-size:22px;font-weight:700}
+.tagline{margin:12px 0 10px;font-size:22px;font-weight:700;text-align:left}
 .underline{border-bottom:3px solid var(--brand); padding-bottom:2px; margin-left:6px}
 
-/* Arama */
+/* Search block centered, wide but balanced */
 .search-wrap{
-  display:flex; align-items:center; gap:10px; flex-wrap:wrap;
+  display:flex; align-items:center; gap:12px; justify-content:center; flex-wrap:wrap;
   background:rgba(255,255,255,.04);
   border:1px solid rgba(255,255,255,.08);
-  border-radius:16px; padding:12px 12px; margin-top:10px
+  border-radius:16px; padding:14px 16px; margin-top:12px
 }
 .search-input{
-  flex:1 1 640px; /* önceki uzunluk kıvamında geniş */
-  height:50px; border-radius:12px;
+  width:100%;
+  max-width:900px;      /* daha kısa ama geniş, ortalanmış */
+  height:52px; border-radius:12px;
   border:1px solid rgba(255,255,255,.15); background:rgba(255,255,255,.06);
   color:var(--text); padding:0 14px; outline:none
 }
 .search-input::placeholder{color:var(--muted)}
 .search-right{display:flex;align-items:center;gap:10px}
 .icon-btn{
-  height:46px;width:46px;border-radius:12px;border:1px solid rgba(255,255,255,.15);
+  height:48px;width:48px;border-radius:12px;border:1px solid rgba(255,255,255,.15);
   background:#0f2236;color:var(--text);cursor:pointer;display:inline-flex;align-items:center;justify-content:center
 }
 .icon-btn:hover{filter:brightness(1.1)}
 .primary-btn{
-  height:46px;padding:0 18px;border-radius:12px;border:none;background:var(--brand);
+  height:48px;padding:0 20px;border-radius:12px;border:none;background:var(--brand);
   color:#08232b;font-weight:700;cursor:pointer
 }
 .primary-btn:hover{filter:brightness(1.05)}
 
-/* Öneriler */
+/* Suggestions */
 .suggestions{
-  position:relative;list-style:none;margin:8px 0 0;padding:0;max-width:900px
+  position:relative;list-style:none;margin:8px auto 0;padding:0;max-width:900px
 }
 .suggestions li{
   background:#0f2236;border:1px solid rgba(255,255,255,.12);border-top:none;
@@ -68,12 +70,12 @@ body{
 .suggestions li:first-child{border-top:1px solid rgba(255,255,255,.12)}
 .suggestions li:hover{background:#143251}
 
-/* Vitrin */
+/* Showcase */
 .section-title{margin:26px 0 12px;font-size:18px;color:var(--muted);font-weight:600}
 .grid{display:grid;gap:14px;justify-content:center}
-.grid-4{grid-template-columns:repeat(4, 230px)} /* orta ve şık – 4 kart */
-@media (max-width:1000px){ .grid-4{grid-template-columns:repeat(2, 230px)} }
-@media (max-width:520px){ .grid-4{grid-template-columns:1fr} }
+.grid-4{grid-template-columns:repeat(4, 240px)} /* orta ve şık – 4 kart */
+@media (max-width:1060px){ .grid-4{grid-template-columns:repeat(2, 240px)} }
+@media (max-width:540px){ .grid-4{grid-template-columns:1fr} }
 
 .card{
   background:var(--panel);
@@ -91,8 +93,6 @@ body{
 .card h3{margin:0 0 6px;font-size:15px}
 .card p{margin:0;color:var(--muted);font-size:13px;line-height:1.35}
 .card .meta{margin-top:8px;font-size:12px;color:#ffe9b3}
-
-.refresh-hint{margin:8px 0 0;color:var(--muted);font-size:12px}
 
 /* Footer */
 .footer{
