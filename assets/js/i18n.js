@@ -72,8 +72,34 @@ function applyI18n(lang){
   const current = saved || browser;
   langSelect.value = messages[current] ? current : "tr";
   applyI18n(langSelect.value);
-  langSelect.addEventListener("change", ()=>{
+  langSelect.addEventListener("change", ()updateDynamicLanguage(langSelect.value);
+=>{
     localStorage.setItem("fae_lang", langSelect.value);
     applyI18n(langSelect.value);
   });
 })();
+// Dil değiştiğinde placeholder ve vitrin verilerini de yenile
+function updateDynamicLanguage(lang){
+  const input = document.getElementById("searchInput");
+  // placeholderları yeni dilde ayarla
+  const placeholders = {
+    tr:["Otel","Bilet","Turlar","Yemek","Moda","Aksesuar","Gayrimenkul","Hediyelik Eşyalar"],
+    en:["Hotels","Tickets","Tours","Food","Fashion","Accessories","Real Estate","Gifts"],
+    de:["Hotels","Tickets","Touren","Essen","Mode","Zubehör","Immobilien","Geschenke"],
+    fr:["Hôtels","Billets","Circuits","Restauration","Mode","Accessoires","Immobilier","Cadeaux"],
+    es:["Hoteles","Boletos","Tours","Comida","Moda","Accesorios","Bienes Raíces","Regalos"],
+    ru:["Отели","Билеты","Туры","Еда","Мода","Аксессуары","Недвижимость","Подарки"],
+    ar:["فنادق","تذاكر","جولات","طعام","موضة","اكسسوارات","عقارات","هدايا"]
+  };
+  const arr = placeholders[lang] || placeholders.tr;
+  let i=0;
+  clearInterval(window.phTimer);
+  window.phTimer=setInterval(()=>{
+    input.setAttribute("placeholder", arr[i%arr.length]);
+    i++;
+  },1800);
+
+  // vitrin başlığını güncelle
+  const tEl=document.querySelector("[data-i18n='trending']");
+  if(tEl && messages[lang]) tEl.textContent=messages[lang].trending;
+}
