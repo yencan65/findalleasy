@@ -9,56 +9,61 @@
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
-  <header class="container">
+  <header class="topbar">
     <div class="brand">
       <img src="assets/img/logo.svg" alt="Findalleasy" class="logo">
       <span class="brand-text">findalleasy</span>
     </div>
 
-    <h1 class="tagline" data-i18n="tagline">Yazman Yeterli, Gerisini Biz Hallederiz</h1>
-    <div class="tagline-underline"></div>
+    <!-- Dil seçimi -->
+    <div class="lang-switch">
+      <select id="langSelect" aria-label="Dil">
+        <option value="tr">Türkçe</option>
+        <option value="en">English</option>
+        <option value="de">Deutsch</option>
+        <option value="fr">Français</option>
+        <option value="es">Español</option>
+        <option value="ru">Русский</option>
+        <option value="ar">العربية</option>
+      </select>
+    </div>
+  </header>
 
+  <main class="container">
+    <!-- Slogan -->
+    <h1 class="tagline">
+      <span data-i18n="taglinePrefix">Yazman Yeterli,</span>
+      <span class="underline" data-i18n="taglineStrong">Biz Hallediyoruz</span>
+    </h1>
+
+    <!-- Arama -->
     <div class="search-wrap">
       <input id="searchInput" class="search-input" type="text"
-             placeholder="Otel, Bilet, Yemek, Moda, Aksesuar, Kırtasiye, Oto Aksesuar, Gayrimenkul, Hediyelik Eşyalar" />
-      <div class="search-buttons">
+             placeholder="Otel, Bilet, Turlar, Yemek, Moda, Aksesuar, Gayrimenkul, Hediyelik Eşyalar" />
+      <div class="search-right">
         <button id="voiceBtn" class="icon-btn" aria-label="Sesli Arama" title="Sesli Arama">
           <!-- mic -->
           <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 14a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v5a3 3 0 0 0 3 3zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 14 0h-2zM11 19h2v3h-2z"/></svg>
         </button>
-        <label for="imageInput" class="icon-btn" title="Görsel Arama">
+        <label for="imageInput" class="icon-btn" title="Görsel Arama" aria-label="Görsel Arama">
           <!-- camera -->
           <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M9 3l2 2h2l2-2h4v4h2v14H3V7h2V3zM5 9v10h14V9H5z"/></svg>
         </label>
         <input id="imageInput" type="file" accept="image/*" hidden />
         <button id="searchBtn" class="primary-btn" data-i18n="search">Ara</button>
       </div>
-
-      <!-- akıllı öneriler -->
-      <ul id="suggestList" class="suggestions" hidden></ul>
-
-      <!-- sabit hizmet etiketleri -->
-      <div class="chips" id="chipList">
-        <button class="chip">Otel</button>
-        <button class="chip">Bilet</button>
-        <button class="chip">Yemek</button>
-        <button class="chip">Moda</button>
-        <button class="chip">Aksesuar</button>
-        <button class="chip">Kırtasiye</button>
-        <button class="chip">Oto Aksesuar</button>
-        <button class="chip">Gayrimenkul</button>
-        <button class="chip">Hediyelik Eşyalar</button>
-      </div>
     </div>
-  </header>
 
-  <!-- Vitrin -->
-  <main class="container">
-    <section>
-      <h2 class="section-title" data-i18n="trending">En Çok Tercih Edilenler</h2>
-      <div id="grid" class="grid">
-        <!-- kartlar JS ile dolduruluyor -->
+    <!-- Öneriler (geçmişe göre) -->
+    <ul id="suggestList" class="suggestions" hidden></ul>
+
+    <!-- Vitrin -->
+    <section class="showcase">
+      <h2 class="section-title" data-i18n="trending">Bölgenizde Bugün Popüler</h2>
+      <div id="grid" class="grid grid-4">
+        <!-- 4 kart JS ile doldurulacak -->
       </div>
+      <p class="refresh-hint" data-i18n="refreshNote">Liste günlük yenilenir.</p>
     </section>
   </main>
 
