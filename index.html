@@ -1,55 +1,72 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="tr">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Findalleasy</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/styles.css">
-<link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Findalleasy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
-<header class="topbar">
-  <div class="brand">
-    <img src="assets/img/logo.svg" class="logo" alt="Findalleasy">
-    <span>Findalleasy</span>
-  </div>
-  <select id="langSelect" aria-label="Language">
-    <option value="tr">Türkçe</option>
-    <option value="en">English</option>
-    <option value="de">Deutsch</option>
-    <option value="fr">Français</option>
-    <option value="es">Español</option>
-    <option value="ru">Русский</option>
-    <option value="ar">العربية</option>
-  </select>
-</header>
-
-<main>
-  <section class="hero">
-    <h1 id="headline" class="accented">Sen Yaz, Gerisini Biz Hallederiz</h1>
-    <div class="searchbar" role="search">
-      <button id="voiceBtn" title="Voice Search">🎤</button>
-      <input id="searchInput" type="text" placeholder="Otel, Bilet, Yemek, Alışveriş..." autocomplete="off">
-      <button id="imageBtn" title="Image Search">📷</button>
-      <button id="searchBtn" class="cta"><span data-i18n="search_button">Ara</span></button>
+  <header class="container">
+    <div class="brand">
+      <img src="assets/img/logo.svg" alt="Findalleasy" class="logo">
+      <span class="brand-text">findalleasy</span>
     </div>
-    <div class="helper">
-      <span id="placeholderRotator">Otel • Bilet • Yemek • Alışveriş • Moda • Giyim • Aksesuar • Kitap • Kırtasiye • Gayrimenkul</span>
-      <span class="geo" id="geoHint">Konum algılanıyor...</span>
+
+    <h1 class="tagline" data-i18n="tagline">Yazman Yeterli, Gerisini Biz Hallederiz</h1>
+    <div class="tagline-underline"></div>
+
+    <div class="search-wrap">
+      <input id="searchInput" class="search-input" type="text"
+             placeholder="Otel, Bilet, Yemek, Moda, Aksesuar, Kırtasiye, Oto Aksesuar, Gayrimenkul, Hediyelik Eşyalar" />
+      <div class="search-buttons">
+        <button id="voiceBtn" class="icon-btn" aria-label="Sesli Arama" title="Sesli Arama">
+          <!-- mic -->
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 14a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v5a3 3 0 0 0 3 3zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 14 0h-2zM11 19h2v3h-2z"/></svg>
+        </button>
+        <label for="imageInput" class="icon-btn" title="Görsel Arama">
+          <!-- camera -->
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M9 3l2 2h2l2-2h4v4h2v14H3V7h2V3zM5 9v10h14V9H5z"/></svg>
+        </label>
+        <input id="imageInput" type="file" accept="image/*" hidden />
+        <button id="searchBtn" class="primary-btn" data-i18n="search">Ara</button>
+      </div>
+
+      <!-- akıllı öneriler -->
+      <ul id="suggestList" class="suggestions" hidden></ul>
+
+      <!-- sabit hizmet etiketleri -->
+      <div class="chips" id="chipList">
+        <button class="chip">Otel</button>
+        <button class="chip">Bilet</button>
+        <button class="chip">Yemek</button>
+        <button class="chip">Moda</button>
+        <button class="chip">Aksesuar</button>
+        <button class="chip">Kırtasiye</button>
+        <button class="chip">Oto Aksesuar</button>
+        <button class="chip">Gayrimenkul</button>
+        <button class="chip">Hediyelik Eşyalar</button>
+      </div>
     </div>
-  </section>
+  </header>
 
-  <section class="trending">
-    <div id="trendGrid" class="grid"></div>
-  </section>
-</main>
+  <!-- Vitrin -->
+  <main class="container">
+    <section>
+      <h2 class="section-title" data-i18n="trending">En Çok Tercih Edilenler</h2>
+      <div id="grid" class="grid">
+        <!-- kartlar JS ile dolduruluyor -->
+      </div>
+    </section>
+  </main>
 
-<footer>
-  <small>©2025 Findalleasy — Akıllı, Global, Uygun. Tek Tıklaman Yeter.</small>
-</footer>
+  <footer class="footer">
+    ©2025 <strong>Findalleasy</strong> — <span data-i18n="footer">Global, Akıllı, Hızlı.</span>
+  </footer>
 
-<script src="assets/js/i18n.js"></script>
-<script src="assets/js/app.js"></script>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/app.js"></script>
 </body>
 </html>
