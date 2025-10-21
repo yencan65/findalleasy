@@ -1,0 +1,8 @@
+{
+  "search_button": "Search",
+  "headline": "Type It, We’ll Handle The Rest",
+  "geo_detected": "Location detected",
+  "geo_denied": "Location permission denied",
+  "geo_unavailable": "Geolocation not supported",
+  "search_for": "Searching for: "
+}
