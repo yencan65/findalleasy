@@ -1,15 +1,20 @@
 {
+  "brand": "FindAllEasy",
   "search": "Suchen",
-  "slogan": "Tippe nur, <u>wir erledigen den Rest</u>",
-  "popular": "Heutige Trends",
   "placeholder_items": [
     "Hotel",
-    "Tickets",
     "Mode",
     "Essen",
-    "Zubehör",
+    "Tickets",
     "Blumen",
-    "Technik"
+    "Tech"
   ],
-  "footer": "©2025 Findalleasy — Smart, Global, Immer Günstig."
+  "slogan_html": "Tippe einfach, <u>wir kümmern uns um den Rest.</u>",
+  "ai_headline_morning": "Guten Morgen ☀️ — wir haben die besten Angebote gesammelt.",
+  "ai_headline_day": "Wie geht’s dir? 😊 Die besten Tagesangebote sind da.",
+  "ai_headline_evening": "Guten Abend 🌆 — frische Deals warten auf dich.",
+  "ai_headline_night": "Gute Nacht 🌙 — wir bereiten schon die Vorschläge für morgen vor.",
+  "about_title": "Was ist FindAllEasy?",
+  "about_text": "FindAllEasy ist eine KI-gestützte globale Preisvergleichsplattform. Sie vereint Online-Shops weltweit, um den besten Preis für dich zu finden. Tippe einfach – wir kümmern uns um den Rest.",
+  "trends": "Trends des Tages"
 }

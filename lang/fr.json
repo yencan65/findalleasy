@@ -1,15 +1,20 @@
 {
+  "brand": "FindAllEasy",
   "search": "Rechercher",
-  "slogan": "Tapez seulement, <u>on s’occupe du reste</u>",
-  "popular": "Tendances du Jour",
   "placeholder_items": [
     "Hôtel",
-    "Billets",
     "Mode",
     "Restauration",
-    "Accessoires",
+    "Billets",
     "Fleurs",
     "Tech"
   ],
-  "footer": "©2025 Findalleasy — Intelligent, Global, Toujours Abordable."
+  "slogan_html": "Tapez simplement, <u>nous nous occupons du reste.</u>",
+  "ai_headline_morning": "Bonjour ☀️ — nous avons réuni les meilleures offres pour vous.",
+  "ai_headline_day": "Comment ça va ? 😊 Voici les meilleures sélections du jour.",
+  "ai_headline_evening": "Bonsoir 🌆 — des offres fraîches vous attendent.",
+  "ai_headline_night": "Bonne nuit 🌙 — nous préparons déjà les sélections de demain.",
+  "about_title": "Qu’est-ce que FindAllEasy ?",
+  "about_text": "FindAllEasy est une plateforme mondiale de comparaison de prix propulsée par l’IA. Elle réunit les boutiques en ligne du monde entier pour trouver le meilleur prix pour vous. Tapez — nous faisons le reste.",
+  "trends": "Tendances du jour"
 }

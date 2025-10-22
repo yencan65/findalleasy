@@ -3,47 +3,67 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Findalleasy — Akıllı Fiyat Karşılaştırma</title>
-  <meta name="description" content="Dinamik, kişisel ve duygusal zekâ destekli fiyat karşılaştırma.">
-  <link rel="icon" href="logo.svg">
-  <link rel="stylesheet" href="style.css">
+  <title>FindAllEasy — Global Price Intelligence</title>
+  <meta name="description" content="FindAllEasy — AI-powered global price comparison.">
+  <link rel="icon" href="assets/logo.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="header">
-    <img src="logo.svg" class="logo" alt="Findalleasy">
-    <div class="lang-select">
-      <select id="language-select" aria-label="Dil seç">
-        <option value="tr">Türkçe</option>
-        <option value="en">English</option>
-      </select>
+  <header class="topbar">
+    <img src="assets/logo.svg" class="logo" alt="FindAllEasy logo" />
+    <div class="lang-switch">
+      <select id="langSelect" aria-label="Language"></select>
     </div>
   </header>
 
-  <main class="container">
-    <section class="hero">
-      <div class="greeting" id="greeting"></div>
-      <div class="slogan" id="slogan">Yazman Yeterli, <u class="brand-underline">Gerisini Biz Hallederiz</u></div>
-      <div class="search-bar">
-        <input id="search-input" type="text" placeholder="Otel, Bilet, Moda..." aria-label="Ara">
-        <div class="icons">
-          <button class="icon-btn" id="voice-btn" title="Sesle ara">🎙️</button>
-          <button class="icon-btn" id="image-btn" title="Görselle ara">📷</button>
-        </div>
-        <button id="search-btn">Ara</button>
-      </div>
+  <main class="hero">
+    <h2 id="aiGreeting" class="ai-greeting">—</h2>
+    <h1 id="slogan" class="slogan"></h1>
 
-      <div class="ai-suggestions" id="ai-suggestions"></div>
+    <div class="search-row">
+      <div class="search-wrap">
+        <input id="searchInput" class="search-input" type="text" aria-label="Search" />
+        <div class="search-tools">
+          <button id="voiceBtn" title="Voice" class="icon-btn">🎤</button>
+          <label class="icon-btn" title="Image">
+            📷
+            <input id="imageInput" type="file" accept="image/*" hidden />
+          </label>
+          <button id="searchBtn" class="search-btn">Search</button>
+        </div>
+      </div>
+    </div>
+
+    <p id="aiHeadline" class="ai-headline">—</p>
+
+    <section class="showcase">
+      <div class="card" data-cat="Otel">
+        <img src="assets/hotel.svg" alt="Hotel" />
+        <div class="c-title">Hotel</div>
+      </div>
+      <div class="card" data-cat="Moda">
+        <img src="assets/fashion.svg" alt="Fashion" />
+        <div class="c-title">Fashion</div>
+      </div>
+      <div class="card" data-cat="Yemek">
+        <img src="assets/food.svg" alt="Food" />
+        <div class="c-title">Food</div>
+      </div>
+      <div class="card" data-cat="Çiçek">
+        <img src="assets/flowers.svg" alt="Flowers" />
+        <div class="c-title">Flowers</div>
+      </div>
     </section>
 
-    <section id="vitrin">
-      <div class="vitrin-grid" id="vitrin-grid"></div>
+    <section class="about">
+      <h3 id="aboutTitle"></h3>
+      <p id="aboutText"></p>
     </section>
   </main>
 
-  <footer class="footer" id="footer">©2025 Findalleasy — Akıllı, Global, Her Zaman Uygun.</footer>
-
-  <script src="app.js" defer></script>
+  <script src="app.js"></script>
+  <script src="search.js"></script>
 </body>
 </html>

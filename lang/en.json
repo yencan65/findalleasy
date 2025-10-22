@@ -1,19 +1,20 @@
 {
+  "brand": "FindAllEasy",
   "search": "Search",
-  "slogan": "Just Type, <u>We Handle the Rest</u>",
-  "popular": "Today’s Trends",
   "placeholder_items": [
     "Hotel",
-    "Tickets",
     "Fashion",
     "Food",
-    "Accessories",
+    "Tickets",
     "Flowers",
     "Tech"
   ],
-  "footer": "©2025 Findalleasy — Smart, Global, Always Affordable.",
-  "hello_morning": "Good morning",
-  "hello_day": "Hello",
-  "hello_evening": "Good evening",
-  "hello_night": "Night owl"
+  "slogan_html": "Just type, <u>we handle the rest.</u>",
+  "ai_headline_morning": "Good morning ☀️ — we gathered the best deals for you.",
+  "ai_headline_day": "How are you? 😊 We found today’s best picks for you.",
+  "ai_headline_evening": "Good evening 🌆 — fresh deals are waiting for you.",
+  "ai_headline_night": "Good night 🌙 — we’re preparing tomorrow’s picks.",
+  "about_title": "What is FindAllEasy?",
+  "about_text": "FindAllEasy is an AI-powered global price comparison platform. It unites online stores worldwide to find the best price for you. Just type — we handle the rest.",
+  "trends": "Today’s Trends"
 }

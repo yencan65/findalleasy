@@ -1,19 +1,20 @@
 {
+  "brand": "FindAllEasy",
   "search": "Ara",
-  "slogan": "Yazman Yeterli, <u>Gerisini Biz Hallederiz</u>",
-  "popular": "Bugünün Trendleri",
   "placeholder_items": [
     "Otel",
-    "Bilet",
     "Moda",
     "Yemek",
-    "Aksesuar",
+    "Bilet",
     "Çiçek",
     "Teknoloji"
   ],
-  "footer": "©2025 Findalleasy — Akıllı, Global, Her Zaman Uygun.",
-  "hello_morning": "Günaydın",
-  "hello_day": "Merhaba",
-  "hello_evening": "İyi akşamlar",
-  "hello_night": "Gece kuşu"
+  "slogan_html": "Yazman yeterli, <u>gerisini biz hallederiz.</u>",
+  "ai_headline_morning": "Günaydın ☀️, senin için en uygun fırsatları bulduk.",
+  "ai_headline_day": "Nasılsın? 😊 Bugün senin için özel fırsatları keşfettik.",
+  "ai_headline_evening": "İyi akşamlar 🌆, günün fırsatları seni bekliyor.",
+  "ai_headline_night": "İyi geceler 🌙, yarın için öneriler hazırlıyoruz.",
+  "about_title": "FindAllEasy nedir?",
+  "about_text": "FindAllEasy, yapay zekâ destekli global fiyat karşılaştırma platformudur. Dünyadaki online mağazaları tek çatı altında toplar, senin için en uygun fiyatı bulur. Yazman yeterli, gerisini biz hallederiz.",
+  "trends": "Bugünün Trendleri"
 }

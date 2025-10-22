@@ -1,15 +1,20 @@
 {
+  "brand": "FindAllEasy",
   "search": "Buscar",
-  "slogan": "Solo escribe, <u>nosotros hacemos el resto</u>",
-  "popular": "Tendencias de Hoy",
   "placeholder_items": [
     "Hotel",
-    "Boletos",
     "Moda",
     "Comida",
-    "Accesorios",
+    "Boletos",
     "Flores",
     "Tecnología"
   ],
-  "footer": "©2025 Findalleasy — Inteligente, Global, Siempre Asequible."
+  "slogan_html": "Solo escribe, <u>nosotros nos encargamos del resto.</u>",
+  "ai_headline_morning": "Buenos días ☀️ — reunimos las mejores ofertas para ti.",
+  "ai_headline_day": "¿Cómo estás? 😊 Encontramos las mejores opciones de hoy.",
+  "ai_headline_evening": "Buenas tardes 🌆 — hay ofertas listas para ti.",
+  "ai_headline_night": "Buenas noches 🌙 — ya preparamos las selecciones de mañana.",
+  "about_title": "¿Qué es FindAllEasy?",
+  "about_text": "FindAllEasy es una plataforma global de comparación de precios impulsada por IA. Reúne tiendas en línea de todo el mundo para encontrar el mejor precio para ti. Solo escribe — nosotros hacemos el resto.",
+  "trends": "Tendencias de hoy"
 }
