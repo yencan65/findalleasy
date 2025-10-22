@@ -11,7 +11,6 @@
 <body>
   <header class="header">
     <img src="logo.svg" class="logo" alt="Findalleasy">
-    <div class="slogan" id="slogan">Yazman Yeterli, <u>Gerisini Biz Hallederiz</u></div>
     <div class="lang-select">
       <select id="language-select" aria-label="Dil seç">
         <option value="tr">Türkçe</option>
@@ -27,17 +26,19 @@
   </header>
 
   <main class="container">
-    <div class="search-wrap">
+    <section class="hero">
+      <div class="slogan" id="slogan">Yazman Yeterli, <u class="brand-underline">Gerisini Biz Hallederiz</u></div>
       <div class="search-bar">
-        <button class="icon-btn" id="voice-btn" title="Sesle ara">🎙️</button>
         <input id="search-input" type="text" placeholder="Otel, Bilet, Moda..." aria-label="Ara">
-        <button class="icon-btn" id="image-btn" title="Görselle ara">📷</button>
+        <div class="icons">
+          <button class="icon-btn" id="voice-btn" title="Sesle ara">🎙️</button>
+          <button class="icon-btn" id="image-btn" title="Görselle ara">📷</button>
+        </div>
         <button id="search-btn">Ara</button>
       </div>
-    </div>
+    </section>
 
     <section id="vitrin">
-      <h2 id="popular-title">Bugünün Trendleri</h2>
       <div class="vitrin-grid" id="vitrin-grid"></div>
     </section>
   </main>
