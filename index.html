@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Findalleasy — Global Fiyat Karşılaştırma</title>
+  <meta name="description" content="Findalleasy: Akıllı, global ve her zaman uygun.">
+  <link rel="icon" href="logo.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <img src="logo.svg" class="logo" alt="Findalleasy">
+    <div class="slogan" id="slogan">Yazman Yeterli, <u>Gerisini Biz Hallederiz</u></div>
+    <div class="lang-select">
+      <select id="language-select" aria-label="Dil seç">
+        <option value="tr">Türkçe</option>
+        <option value="en">English</option>
+        <option value="de">Deutsch</option>
+        <option value="fr">Français</option>
+        <option value="es">Español</option>
+        <option value="ru">Русский</option>
+        <option value="ar">العربية</option>
+        <option value="jp">日本語</option>
+      </select>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="search-wrap">
+      <div class="search-bar">
+        <button class="icon-btn" id="voice-btn" title="Sesle ara">🎙️</button>
+        <input id="search-input" type="text" placeholder="Otel, Bilet, Moda..." aria-label="Ara">
+        <button class="icon-btn" id="image-btn" title="Görselle ara">📷</button>
+        <button id="search-btn">Ara</button>
+      </div>
+    </div>
+
+    <section id="vitrin">
+      <h2 id="popular-title">Bugünün Trendleri</h2>
+      <div class="vitrin-grid" id="vitrin-grid"></div>
+    </section>
+  </main>
+
+  <footer class="footer" id="footer">©2025 Findalleasy — Akıllı, Global, Her Zaman Uygun.</footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

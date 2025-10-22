@@ -1,0 +1,30 @@
+{
+  "GLOBAL": [
+    "Otel",
+    "Bilet",
+    "Moda",
+    "Yemek",
+    "Aksesuar"
+  ],
+  "TR": [
+    "Otel",
+    "Yemek",
+    "Bilet",
+    "Moda",
+    "Çiçek"
+  ],
+  "DE": [
+    "Elektronik",
+    "Moda",
+    "Bilet",
+    "Yemek",
+    "Hediye"
+  ],
+  "JP": [
+    "Teknoloji",
+    "Moda",
+    "Yemek",
+    "Bilet",
+    "Çiçek"
+  ]
+}
