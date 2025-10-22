@@ -11,5 +11,9 @@
     "Flowers",
     "Tech"
   ],
-  "footer": "©2025 Findalleasy — Smart, Global, Always Affordable."
+  "footer": "©2025 Findalleasy — Smart, Global, Always Affordable.",
+  "hello_morning": "Good morning",
+  "hello_day": "Hello",
+  "hello_evening": "Good evening",
+  "hello_night": "Night owl"
 }

@@ -5,10 +5,12 @@
   --accent:#0078FF;
   --beige:#E5D3B3;
   --muted:#a1a1a1;
+  --chip:#101f2d;
+  --chip-border:#21384b;
 }
 
 *{box-sizing:border-box}
-html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Poppins,Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif}
 
 .header{display:flex;align-items:center;gap:18px;justify-content:space-between;padding:16px 20px;position:sticky;top:0;background:linear-gradient(180deg,rgba(14,26,38,.95),rgba(14,26,38,.7));backdrop-filter:blur(6px);z-index:10}
 .logo{height:34px}
@@ -16,8 +18,9 @@ html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:
 
 .container{max-width:1100px;margin:0 auto;padding:16px}
 .hero{display:flex;flex-direction:column;align-items:center;gap:12px;margin-top:18px;margin-bottom:12px}
-.slogan{font-size:20px;text-align:center;opacity:.95}
-.brand-underline{color:var(--accent); text-decoration: underline; text-underline-offset: 4px;}
+.greeting{font-size:14px;opacity:.85;color:#d1e7ff}
+.slogan{font-family:'Playfair Display', serif;font-size:22px;text-align:center;letter-spacing:.2px}
+.brand-underline{color:var(--accent); text-decoration: underline; text-underline-offset: 6px; text-decoration-thickness: 2px;}
 
 .search-bar{display:grid;grid-template-columns:1fr auto auto;gap:10px;background:#122433;border:1px solid #1f3547;border-radius:16px;padding:10px 12px;max-width:720px;width:100%;box-shadow:0 10px 30px rgba(0,0,0,.25)}
 .search-bar input{flex:1;background:transparent;border:none;outline:none;color:var(--text);font-size:16px}
@@ -25,21 +28,27 @@ html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:
 .icon-btn{background:#102334;border:1px solid #1f3547;color:var(--text);border-radius:12px;padding:8px 10px;cursor:pointer}
 #search-btn{background:var(--accent);color:#fff;border:none;border-radius:12px;padding:10px 16px;font-weight:600;cursor:pointer}
 
-#vitrin{margin-top:18px}
-.vitrin-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
-.vitrin-card{grid-column:span 6;background:#0f1e2b;border:2px solid var(--beige);border-radius:20px;overflow:hidden;transition:all .35s ease;position:relative;box-shadow:0 0 15px rgba(0,0,0,.3)}
-.vitrin-card:hover{transform:scale(1.05);box-shadow:0 0 24px rgba(0,120,255,.35);filter:brightness(1.05)}
-.vitrin-card img{width:100%;height:180px;object-fit:cover;transition:transform .6s ease}
-.vitrin-card:hover img{transform:scale(1.06)}
-.vitrin-content{padding:12px 14px}
-.vitrin-content h3{margin:0;color:var(--text);font-size:16px;font-weight:600}
+.ai-suggestions{display:flex;gap:10px;margin-top:8px;flex-wrap:wrap;justify-content:center}
+.suggestion-chip{background:var(--chip);border:1px solid var(--chip-border);border-radius:14px;padding:8px 12px;display:flex;align-items:center;gap:8px;font-size:13px;opacity:.95;cursor:pointer;transition:all .25s ease}
+.suggestion-chip:hover{transform:translateY(-1px);box-shadow:0 8px 18px rgba(0,0,0,.25);border-color:#2a4a64}
+.suggestion-icon{font-size:16px}
+.suggestion-text{white-space:nowrap}
+
+#vitrin{margin-top:12px}
+.vitrin-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:14px}
+.vitrin-card{grid-column:span 6;background:#0f1e2b;border:2px solid var(--beige);border-radius:18px;overflow:hidden;transition:all .32s ease;position:relative;box-shadow:0 0 15px rgba(0,0,0,.28)}
+.vitrin-card:hover{transform:scale(1.04);box-shadow:0 0 22px rgba(0,120,255,.32);filter:brightness(1.04)}
+.vitrin-card img{width:100%;height:160px;object-fit:cover;transition:transform .5s ease}
+.vitrin-card:hover img{transform:scale(1.05)}
+.vitrin-content{padding:10px 12px}
+.vitrin-content h3{margin:0;color:var(--text);font-size:15px;font-weight:600}
 
 .vitrin-card::after{content:"";display:block;height:3px;width:100%;background:linear-gradient(90deg,var(--accent),var(--beige));position:absolute;left:0;bottom:0;animation:glow 2s ease-in-out infinite alternate;opacity:.6}
 @keyframes glow{from{opacity:.25}to{opacity:1}}
 
-.footer{margin:32px 0 20px;text-align:center;color:var(--muted)}
+.footer{margin:30px 0 18px;text-align:center;color:var(--muted)}
 
 @media (max-width:900px){
   .vitrin-card{grid-column:span 12}
-  .vitrin-card img{height:160px}
+  .vitrin-card img{height:140px}
 }
