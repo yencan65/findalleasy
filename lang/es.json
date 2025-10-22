@@ -9,12 +9,13 @@
     "Flores",
     "Tecnología"
   ],
-  "slogan_html": "Solo escribe, <u>nosotros nos encargamos del resto.</u>",
-  "ai_headline_morning": "Buenos días ☀️ — reunimos las mejores ofertas para ti.",
-  "ai_headline_day": "¿Cómo estás? 😊 Encontramos las mejores opciones de hoy.",
-  "ai_headline_evening": "Buenas tardes 🌆 — hay ofertas listas para ti.",
-  "ai_headline_night": "Buenas noches 🌙 — ya preparamos las selecciones de mañana.",
-  "about_title": "¿Qué es FindAllEasy?",
-  "about_text": "FindAllEasy es una plataforma global de comparación de precios impulsada por IA. Reúne tiendas en línea de todo el mundo para encontrar el mejor precio para ti. Solo escribe — nosotros hacemos el resto.",
-  "trends": "Tendencias de hoy"
+  "slogan_html": "Solo escribe, <u>nos encargamos del resto.</u>",
+  "ai_headline_morning": "☀️ Buenos días — selección para ti.",
+  "ai_headline_day": "😊 ¿Cómo estás? — lista de hoy preparada.",
+  "ai_headline_evening": "🌟 Buenas tardes — ofertas frescas.",
+  "ai_headline_night": "🌙 Buenas noches — preparando mañana.",
+  "about_text": "@2025 <span class='brand-blue'>FindAllEasy</span> — plataforma global de comparación de precios con IA…",
+  "trends": "Tendencias de hoy",
+  "ai_engine_note": "💡 Índice de precios para {country}: {delta}.",
+  "ai_engine_loading": "💡 Calculando índice de precios…"
 }

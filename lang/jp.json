@@ -10,11 +10,12 @@
     "テック"
   ],
   "slogan_html": "入力するだけで、<u>あとはお任せください。</u>",
-  "ai_headline_morning": "おはようございます ☀️ — ベストディールを集めました。",
-  "ai_headline_day": "ご機嫌いかがですか？ 😊 本日のおすすめをご用意しました。",
-  "ai_headline_evening": "こんばんは 🌆 — 新しいお得情報が揃っています。",
-  "ai_headline_night": "おやすみなさい 🌙 — 明日のおすすめを準備しています。",
-  "about_title": "FindAllEasy とは？",
-  "about_text": "FindAllEasy は AI を活用したグローバルな価格比較プラットフォームです。世界中のオンラインストアをひとつにまとめ、あなたに最適な価格を見つけます。入力するだけで、あとはお任せください。",
-  "trends": "本日のトレンド"
+  "ai_headline_morning": "☀️ おはようございます — あなた向けに厳選。",
+  "ai_headline_day": "😊 ご機嫌いかが？ — 本日のおすすめ。",
+  "ai_headline_evening": "🌟 こんばんは — 新しいお得情報。",
+  "ai_headline_night": "🌙 おやすみなさい — 明日の準備中。",
+  "about_text": "@2025 <span class='brand-blue'>FindAllEasy</span> はAIで動くグローバルな価格比較プラットフォームです…",
+  "trends": "本日のトレンド",
+  "ai_engine_note": "💡 {country} の物価指数：{delta}。",
+  "ai_engine_loading": "💡 物価指数を計算中…"
 }

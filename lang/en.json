@@ -10,11 +10,12 @@
     "Tech"
   ],
   "slogan_html": "Just type, <u>we handle the rest.</u>",
-  "ai_headline_morning": "Good morning ☀️ — we gathered the best deals for you.",
-  "ai_headline_day": "How are you? 😊 We found today’s best picks for you.",
-  "ai_headline_evening": "Good evening 🌆 — fresh deals are waiting for you.",
-  "ai_headline_night": "Good night 🌙 — we’re preparing tomorrow’s picks.",
-  "about_title": "What is FindAllEasy?",
-  "about_text": "FindAllEasy is an AI-powered global price comparison platform. It unites online stores worldwide to find the best price for you. Just type — we handle the rest.",
-  "trends": "Today’s Trends"
+  "ai_headline_morning": "☀️ Good morning — curated for you.",
+  "ai_headline_day": "😊 How are you? — today’s picks are ready.",
+  "ai_headline_evening": "🌟 Good evening — catch fresh deals.",
+  "ai_headline_night": "🌙 Good night — prepping tomorrow for you.",
+  "about_text": "@2025 <span class='brand-blue'>FindAllEasy</span> — an AI‑powered global price comparison platform. It unites online stores worldwide to find you the best price. Just type — we handle the rest.",
+  "trends": "Today’s Trends",
+  "ai_engine_note": "💡 Price index for {country}: {delta}.",
+  "ai_engine_loading": "💡 Computing price index…"
 }

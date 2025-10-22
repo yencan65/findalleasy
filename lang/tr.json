@@ -10,11 +10,12 @@
     "Teknoloji"
   ],
   "slogan_html": "Yazman yeterli, <u>gerisini biz hallederiz.</u>",
-  "ai_headline_morning": "Günaydın ☀️, senin için en uygun fırsatları bulduk.",
-  "ai_headline_day": "Nasılsın? 😊 Bugün senin için özel fırsatları keşfettik.",
-  "ai_headline_evening": "İyi akşamlar 🌆, günün fırsatları seni bekliyor.",
-  "ai_headline_night": "İyi geceler 🌙, yarın için öneriler hazırlıyoruz.",
-  "about_title": "FindAllEasy nedir?",
-  "about_text": "FindAllEasy, yapay zekâ destekli global fiyat karşılaştırma platformudur. Dünyadaki online mağazaları tek çatı altında toplar, senin için en uygun fiyatı bulur. Yazman yeterli, gerisini biz hallederiz.",
-  "trends": "Bugünün Trendleri"
+  "ai_headline_morning": "☀️ Günaydın — senin için seçtik.",
+  "ai_headline_day": "😊 Nasılsın? — bugünün fırsatları hazır.",
+  "ai_headline_evening": "🌟 İyi akşamlar — yeni fırsatları yakala.",
+  "ai_headline_night": "🌙 İyi geceler — yarın için hazırlanıyoruz.",
+  "about_text": "@2025 <span class='brand-blue'>FindAllEasy</span> — yapay zekâ destekli global fiyat karşılaştırma platformudur. Dünyadaki online mağazaları tek çatı altında toplar, senin için en uygun fiyatı bulur. Yazman yeterli, gerisini biz hallederiz.",
+  "trends": "Bugünün Trendleri",
+  "ai_engine_note": "💡 {country} için fiyat endeksi: {delta}.",
+  "ai_engine_loading": "💡 Fiyat endeksi hesaplanıyor…"
 }

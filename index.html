@@ -1,69 +1,48 @@
 <!doctype html>
 <html lang="tr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>FindAllEasy — Global Price Intelligence</title>
-  <meta name="description" content="FindAllEasy — AI-powered global price comparison.">
-  <link rel="icon" href="assets/logo.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FindAllEasy — Global Harmony Pro (v9.5)</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="assets/logo.svg">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0078FF">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="topbar">
-    <img src="assets/logo.svg" class="logo" alt="FindAllEasy logo" />
-    <div class="lang-switch">
-      <select id="langSelect" aria-label="Language"></select>
-    </div>
-  </header>
+<header class="topbar">
+  <img src="assets/logo.svg" class="logo" alt="FindAllEasy logo">
+  <div class="lang-switch"><select id="langSelect" aria-label="Language"></select></div>
+</header>
 
-  <main class="hero">
-    <h2 id="aiGreeting" class="ai-greeting">—</h2>
-    <h1 id="slogan" class="slogan"></h1>
+<main class="hero">
+  <h1 id="slogan" class="slogan"></h1>
 
-    <div class="search-row">
-      <div class="search-wrap">
-        <input id="searchInput" class="search-input" type="text" aria-label="Search" />
-        <div class="search-tools">
-          <button id="voiceBtn" title="Voice" class="icon-btn">🎤</button>
-          <label class="icon-btn" title="Image">
-            📷
-            <input id="imageInput" type="file" accept="image/*" hidden />
-          </label>
-          <button id="searchBtn" class="search-btn">Search</button>
-        </div>
+  <div class="search-row">
+    <div class="search-wrap">
+      <input id="searchInput" class="search-input" type="text" aria-label="Search">
+      <div class="search-tools">
+        <button id="voiceBtn" class="icon-btn" title="Voice">🎤</button>
+        <label class="icon-btn" title="Image">📷<input id="imageInput" type="file" accept="image/*" hidden></label>
+        <button id="searchBtn" class="search-btn">Search</button>
       </div>
     </div>
+  </div>
 
-    <p id="aiHeadline" class="ai-headline">—</p>
+  <section class="showcase-header"><p id="aiGreeting" class="ai-greeting"></p></section>
 
-    <section class="showcase">
-      <div class="card" data-cat="Otel">
-        <img src="assets/hotel.svg" alt="Hotel" />
-        <div class="c-title">Hotel</div>
-      </div>
-      <div class="card" data-cat="Moda">
-        <img src="assets/fashion.svg" alt="Fashion" />
-        <div class="c-title">Fashion</div>
-      </div>
-      <div class="card" data-cat="Yemek">
-        <img src="assets/food.svg" alt="Food" />
-        <div class="c-title">Food</div>
-      </div>
-      <div class="card" data-cat="Çiçek">
-        <img src="assets/flowers.svg" alt="Flowers" />
-        <div class="c-title">Flowers</div>
-      </div>
-    </section>
+  <section class="showcase">
+    <div class="card" data-cat="Hotel"><img src="assets/hotel.svg" alt="Hotel"><div class="c-title">Hotel</div><div class="info-bubble" aria-live="polite"></div></div>
+    <div class="card" data-cat="Fashion"><img src="assets/fashion.svg" alt="Fashion"><div class="c-title">Fashion</div><div class="info-bubble" aria-live="polite"></div></div>
+    <div class="card" data-cat="Food"><img src="assets/food.svg" alt="Food"><div class="c-title">Food</div><div class="info-bubble" aria-live="polite"></div></div>
+    <div class="card" data-cat="Flowers"><img src="assets/flowers.svg" alt="Flowers"><div class="c-title">Flowers</div><div class="info-bubble" aria-live="polite"></div></div>
+  </section>
 
-    <section class="about">
-      <h3 id="aboutTitle"></h3>
-      <p id="aboutText"></p>
-    </section>
-  </main>
+  <section class="about"><p id="aboutText"></p></section>
+</main>
 
-  <script src="app.js"></script>
-  <script src="search.js"></script>
+<script src="app.js"></script>
+<script>if('serviceWorker'in navigator){navigator.serviceWorker.register('serviceWorker.js');}</script>
 </body>
 </html>
