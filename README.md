@@ -1,14 +1,12 @@
-# FindAllEasy v9.5 — Global Harmony Pro
-- 8 dil (TR, EN, DE, FR, ES, RU, AR, JP) — otomatik algılama + manuel seçim
-- Duygusal AI selam (vitrin sol üstü, emoji + zaman)
-- Poppins Medium slogan + marka rengi (#0078FF)
-- 4 yatay vitrin kartı, 200px yükseklik (minimal hover)
-- PWA (manifest + service worker + ikonlar)
-- **AI Engine Pro**: Ülke, kur (exchangerate.host), vergi (VAT tablosu) ile TR’ye göre **fiyat endeksi** hesaplar ve kart altına baloncuk yazar.
+# FindAllEasy AI Engine v1 (Flask API)
 
-## Kurulum
-Statik host (Render/Netlify/Vercel/GitHub Pages) yeterli. `index.html` kökte olmalı.
+Endpoints:
+- GET /api/health
+- GET /api/search?q=iPhone&region=TR&lang=tr
+- GET /api/trends?region=TR
+- GET /api/recommendations?user=guest&last=iPhone
 
-## Notlar
-- Kur verileri `exchangerate.host` üzerinden çekilir (client-side). Erişim yoksa fallback oranları kullanılır.
-- VAT tablosu `app.js` içinde düzenlenebilir.
+Render deploy:
+- Build Command: pip install -r requirements.txt
+- Start Command: python app.py
+- Env: ALLOWED_ORIGINS=https://www.findalleasy.com
