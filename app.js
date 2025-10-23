@@ -1,8 +1,5 @@
-// 🌍 FindAllEasy Frontend - Connected to Live API
-
 const API_URL = "https://api.findalleasy.com"; // ✅ Live backend URL
 
-// Bölge ve dil tespiti
 async function resolveCountry() {
   try {
     const res = await fetch("https://ipapi.co/json/");
@@ -18,7 +15,6 @@ async function resolveCountry() {
   }
 }
 
-// Arama isteği gönder
 async function performSearch(query) {
   try {
     const url = `${API_URL}/search?q=${encodeURIComponent(query)}&lang=tr`;
@@ -37,7 +33,6 @@ async function performSearch(query) {
   }
 }
 
-// Arama sonuçlarını vitrine yaz
 function renderResults(results) {
   const container = document.getElementById("results");
   container.innerHTML = "";
@@ -55,7 +50,6 @@ function renderResults(results) {
   });
 }
 
-// Sayfa yüklendiğinde
 window.addEventListener("DOMContentLoaded", async () => {
   const country = await resolveCountry();
   console.log("Detected country:", country);
