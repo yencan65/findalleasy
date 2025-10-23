@@ -1,5 +1,4 @@
-const API_URL = 
-  "https://api.findalleasy.com";
+const API_URL = "https://api.findalleasy.com";
 
 async function resolveCountry() {
   try {
