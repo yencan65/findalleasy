@@ -147,6 +147,7 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
 @app.route(" /ping")
 def ping():
     return jsonify( {"status": "ok"})
