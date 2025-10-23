@@ -1,4 +1,4 @@
-const API_URL = "https://api.findalleasy.com"; // ✅ Live backend URL
+const API_URL = "https://api.findalleasy.com";
 
 async function resolveCountry() {
   try {
