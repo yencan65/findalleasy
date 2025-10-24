@@ -1,12 +1,20 @@
-# FindAllEasy AI Engine v1 (Flask API)
+# FindAllEasy v4.5 — Intelligent Emotion Edition
 
-Endpoints:
-- GET /api/health
-- GET /api/search?q=iPhone&region=TR&lang=tr
-- GET /api/trends?region=TR
-- GET /api/recommendations?user=guest&last=iPhone
+**Yenilikler**
+- Smart Reactive Banner: Aynı kategoride tekrar aramada AI banner çıkar.
+- Zaman-temelli tema: ✨ sabah, ☀️ öğle, 🌙 akşam, 🌜 gece.
+- 4 kartlı AI vitrin (kişisel öneriler).
+- Final footer metni: “Onun uygun fiyatı bulması, parmak şıklatman kadar kolay. ✨”
 
-Render deploy:
-- Build Command: pip install -r requirements.txt
-- Start Command: python app.py
-- Env: ALLOWED_ORIGINS=https://www.findalleasy.com
+## Kurulum
+```bash
+cp .env.example .env
+npm install
+npm run build-client
+npm start
+# http://localhost:8080
+```
+
+## Admin (gizli)
+- `/admin` endpoint'i sadece `ADMIN_SECRET` ile erişilir.
+- Header: `x-admin-secret: <secret>`
