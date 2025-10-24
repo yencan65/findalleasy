@@ -10,7 +10,8 @@
     "start": "node server.js",
     "dev": "NODE_ENV=development nodemon server.js",
     "build-client": "npm --prefix frontend run build",
-    "postinstall": "npm --prefix frontend ci && npm run build-client"
+  "postinstall": "npm --prefix frontend install && npm run build-client"
+
   },
   "dependencies": {
     "axios": "^1.7.7",
