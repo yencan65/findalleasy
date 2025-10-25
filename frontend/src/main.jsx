@@ -8,6 +8,10 @@ import AIAsistan from "./components/AIAsistan.jsx";
 import { useTranslation } from "react-i18next";
 const { t } = useTranslation();
 
+import Footer from "./components/Footer.jsx";
+// Sayfanın altında:
+<Footer />
+
 // JSX içinde:
 <AIAsistan t={t} />
 
