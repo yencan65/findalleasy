@@ -1,3 +1,4 @@
+import React from 'react';
 import LogoAnimated from './components/LogoAnimated';
 
 function App() {
@@ -8,3 +9,5 @@ function App() {
     </>
   );
 }
+
+export default App;
