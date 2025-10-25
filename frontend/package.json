@@ -8,12 +8,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-router-dom": "^6.26.2"
+    "lottie-react": "^2.4.0",
+    "i18next": "^23.10.1",
+    "react-i18next": "^15.0.0"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.1",
     "vite": "^5.4.8"
   }
 }
+
